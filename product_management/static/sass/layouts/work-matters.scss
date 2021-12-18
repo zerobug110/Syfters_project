@@ -1,0 +1,97 @@
+.work-matters {
+    background-image: linear-gradient(
+        rgba(0, 0,0, .9),
+        rgba(0,0,0, .9)),
+        url(../images/projects21.jpg);
+    grid-column: full-start / full-end;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+}
+
+.work {
+    font-size: 1.6rem;
+    margin: 5rem 0;
+    grid-column: col-start 1 / col-end;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-row-gap: 5rem;
+    grid-column-gap: 15rem;
+
+    &__img-box {
+        display: grid;
+
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 6rem);
+    }
+
+    &__img-1 {
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient(to right bottom,
+        rgba(6, 19, 46, 0),
+        rgba(15, 23, 34, 0)),
+        url(../images/projects2.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 3;   
+    }
+
+    &__img-2 {
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient(to right bottom,
+        rgba(6, 19, 46, 0),
+        rgba(15, 23, 34, 0)),
+        url(../images/projects11.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        box-shadow: 0 .5rem .8rem 0 rgba(0, 0,0, 0.8);
+
+        grid-column: 2 / span 5;
+        grid-row: 1 / -1;
+    }
+
+    &__img-3 {
+        width: 100%;
+        height: 100%;    
+        background-image: linear-gradient(to right bottom,
+        rgba(6, 19, 46, 0),
+        rgba(15, 23, 34, 0)),
+        url(../images/projects4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: .2rem;
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0,0, 0.8);
+
+        grid-column: 5 / -1;
+        grid-row: 2 / span 3;
+    }
+
+    &__text-box {
+        
+      
+    }
+
+    &__heading {
+        color: #EC6310;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        text-shadow: 0 .1rem .2rem rgba(0, 0,0, 0.8);
+
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        color: rgb(212, 209, 209);
+        text-shadow: 0 .2rem .3rem rgba(0, 0,0, 0.8);
+    }
+}
+

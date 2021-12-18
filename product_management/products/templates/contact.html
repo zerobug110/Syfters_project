@@ -1,0 +1,127 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboslute estate</title>
+    <link rel="stylesheet" href="{% static 'style/main.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/absolute-estate.png'%}" type="image/x-icon">
+</head>
+<body class="container">
+    <header class="header contacts-bk">
+        <div class="nav">
+            <div class="nav__logo">
+                <a href = "/">    
+                    <img src=" {% static 'images/logo.jpeg'%}" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="nav__items">
+                <ul class="nav__list">
+                    <li class="nav__link"><a href="/">home</a></li>
+                    <li class="nav__link"><a href="/portfolio">portfolio</a></li>
+                    <li class="nav__link"><a href="/contacts">contacts</a></li>
+                    <li class="nav__link"><a href="/news">news</a></li>
+                    <li class="nav__link"><a href="/about">about</a></li>
+                </ul>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>       
+        </div>
+        <div class="text-box">
+            <h1 class="main-heading">
+                <span class="primary-heading">Syfters</span>
+                <span class="sub-heading">get a house at a reasonable price</span>
+             </h1>    
+        </div>
+    </header>
+    <section class="contacts">
+        <div class="section-heading contacts__h2">contacts</div>
+        <div class="contact">
+            <div class="location">
+                <svg class="contact-icon">
+                    <use xlink:href = "images/sprite.svg#icon-location"></use>
+                </svg>
+                <address class="address">kololi 19<sup>th</sup> street, banjul the gambia</address>
+            </div>
+            <div class="telephone">
+                <svg class="contact-icon">
+                    <use xlink:href ="images/sprite.svg#icon-phone"></use>
+                </svg>
+                <p>+220 3202829 / +220 793898</p>
+            </div>
+            <div class="media-icons">
+                <h3 class="social-heading">stay connected</h3>
+                <div class="contact-media">
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="contact-social-media--icon">
+                            <use xlink:href ="images/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form class="form" method = "POST">
+            {% csrf_token %}
+            <h3 class="form__heading">let's talk</h3>
+            <input type="text" name="name" id="" placeholder="Full name" required>
+            <input type="text" name="subject" id="" placeholder="Subject" required>
+            <input type="email" name="email" id="" placeholder="Email" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="What's your message" class="textarea" required></textarea>
+            <input type="submit" value="Send" class="submit">
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7760.855347993981!2d-16.70651086736461!3d13.447713892995058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgm!4v1598497734405!5m2!1sen!2sgm" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <h3 class="footer__heading">absolute estate makes you feel at home</h3>
+        <div class="footer__box">
+            <ul class="footer__item">
+                <li><a href="/about" class="footer__link"> terms and services</a></li>
+                <li><a href="/about" class="footer__link">policy</a></li>
+                <li><a href="/about" class="footer__link"> security </a></li>
+            </ul>
+        </div>
+        <div class="footer-social-media">
+            <a href="facebook.com">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="twitter.com">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="youtube">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-youtube"></use>
+                </svg>
+            </a>
+        </div>
+        <p class="copyright">
+            copyright &copy; <span id="current-date"></span>
+        </p>
+    </footer>
+     <!--DEDICATED THIS WEB DESIGN TO MY LOVELY GRANDMA WHO PASSED AWAY RIGHT AFTER I COMPLETED THIS SITE
+     MY ALLAH GRANT HER THE HIGHTEST PLACE IN JANNAH "MBINKO" 26th-8-2020 AT THE AGE OF 101-->
+    
+     <script src="{% static 'js/properties.js'%}"></script>
+</body>
+</html>

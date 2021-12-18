@@ -1,0 +1,99 @@
+.testimony {  
+    grid-column: full-start / full-end;
+    margin-top: 10rem;
+    background-image: linear-gradient(
+        rgba(6, 19, 46, 0.856),
+        rgba(15, 23, 34, 0.877)),
+    url(../images/happy-family.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+    
+
+    &__heading {
+        text-align: center;
+		color: $color-pink;;
+        transform: translateY(-10rem);
+        text-shadow: 0 .1rem .2rem rgba(0,0,0, .4);
+    }
+
+    &__box{   
+        display: grid;
+        grid-template-columns: 5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem;
+        grid-gap: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+}
+
+.reviews {
+    width: 50rem;
+    margin: 0rem ;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: .3rem;
+    box-shadow: 0 .1rem .4rem rgba(0,0,0, .3);
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.review {
+
+    &__name {
+        font-size: 2.2rem;
+        font-weight: 250;
+        text-transform: capitalize;
+        color: #000;
+    }
+
+    &__date {
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+        font-style: italic;
+    }
+
+    &__paragraph {
+        color: rgba(19, 16, 16, 0.918);
+        position: relative;
+    }
+}
+.figcaption {
+    color: #111;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 .2rem 0;
+    text-transform: capitalize;
+}
+
+
+.slide-icon {
+    width: 7rem;
+    height: 7rem;
+    fill: $color-pink;
+}
+
+
+.star-icon {
+    fill: #dda407;
+    width: 2rem;   
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.next {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.prev {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

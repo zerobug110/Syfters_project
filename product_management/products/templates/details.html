@@ -1,0 +1,109 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A real estate web site what you can find house for sell or rent i africa ">
+    <title>absolute | home</title>
+    <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/absolute-estate.png' %}" type="image/x-icon">
+</head>
+<body class="container">
+    {% comment %} <header class="header home">
+        <div class="nav">
+            <div class="nav__logo">
+                <img src=" {% static 'images/logo.jpeg'%}" alt="logo" class="logo-img">
+            </div>
+            <div class="nav__items">
+                <ul class="nav__list">
+                    <li class="nav__link"><a href="/home">home</a></li>
+                    <li class="nav__link"><a href="/portfolio">portfolio</a></li>
+                    <li class="nav__link"><a href="/contacts">contacts</a></li>
+                    <li class="nav__link"><a href="/news">news</a></li>
+                    <li class="nav__link"><a href="/about">about</a></li>
+                </ul>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>       
+        </div>
+        <div class="text-box">
+            <h1 class="main-heading">
+                <span class="primary-heading">absolute estate</span>
+                <span class="sub-heading">owning a home is a keystone of wealth</span>
+             </h1>
+            
+        </div>
+        
+    </header> {% endcomment %}
+
+    <section class="details">
+
+        <a href = "/portfolio" class="btn btp">back to portfolio</a>
+        <div class="details__container ">
+            <div class="details__images">
+                <div class="details__images--main">
+                    <img src=" {{eachproduct.thumbnail_1.url}}" alt="images" class="details__images--main-img " id="featured">
+                </div>
+                <div class="details__images--sub">
+                    <div class="details__images--sub-box ">
+                        <img src="{{eachproduct.thumbnail_1.url}}" alt="images" class="sub--img thumbnail">
+                    </div>
+                    <div class="details__images--sub-box">
+                        <img src="{{eachproduct.thumbnail_2.url}}" alt="images" class="sub--img thumbnail">
+                    </div>
+                    <div class="details__images--sub-box">
+                        <img src="{{eachproduct.thumbnail_3.url}}" alt="images" class="sub--img thumbnail">
+                    </div>
+                    <div class="details__images--sub-box">
+                        <img src="{{eachproduct.thumbnail_4.url}}" alt="images" class="sub--img thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="details__text">
+                <div class="section-heading">description</div>
+                <h2 class="details__text--title">{{eachproduct.name}}</h2>
+                <p class="details__text--para">{{eachproduct.description}}</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="footer__heading">absolute estate makes you feel at home</h3>
+        <div class="footer__box">
+            <ul class="footer__item">
+                <li><a href="/about" class="footer__link"> terms and services</a></li>
+                <li><a href="/about" class="footer__link">policy</a></li>
+                <li><a href="" class="footer__link"> security </a></li>
+                <li><a href="" class="footer__link"> sitemap </a></li>
+            </ul>
+        </div>
+        <div class="footer-social-media">
+            <a href="facebook.com">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="twitter.com">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="youtube.com">
+                <svg class="footer-social-media--icon">
+                    <use xlink:href ="images/sprite.svg#icon-youtube"></use>
+                </svg>
+            </a>
+        </div>
+        <p class="copyright">
+            copyright &copy; <span id="current-date">2021</span>
+        </p>
+    </footer>
+    <!--DEDICATED THIS WEB DESIGN TO MY LOVELY GRANDMA WHO PASSED AWAY RIGHT AFTER I COMPLETED THIS SITE
+     MY ALLAH GRANT HER THE HIGHTEST PLACE IN JANNAH "MBINKO" 26th-8-2020  AT THE AGE OF 101-->
+     <script src="{% static 'js/app.js'%}"></script>
+</body>
+</html>
