@@ -35,3 +35,6 @@ thumbnail[2].onclick = function() {
 thumbnail[3].onclick = function() {
     productImg.src = thumbnail[3].src;
 }
+
+//generate the current date
+date.innerHTML = new Date().getFullYear();

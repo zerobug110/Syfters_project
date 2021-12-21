@@ -204,21 +204,7 @@
                 <p class="review__paragraph">
                     this is the best car repair shope in the country their work is perfect and is the best anyone can get just hit em up and they will get ur car running as soon as possible with any worry.
                 </p>
-                <svg class="star-icon">
-                    <use xlink:href = "images/sprite.svg#icon-star-full"></use>
-                </svg>
-                <svg class="star-icon">
-                    <use xlink:href = "images/sprite.svg#icon-star-full"></use>
-                </svg>
-                <svg class="star-icon">
-                    <use xlink:href = "images/sprite.svg#icon-star-full"></use>
-                </svg>
-                <svg class="star-icon">
-                    <use xlink:href = "images/sprite.svg#icon-star-full"></use>
-                </svg>
-                <svg class="star-icon">
-                    <use xlink:href = "images/sprite.svg#icon-star-full"></use>
-                </svg>
+
             </figure>    
             <button class="next">
                 <svg class="slide-icon">
@@ -227,19 +213,6 @@
             </button>
         </div>
     </article>
-
-    {% comment %} <section class="partners">
-        <h2 class="section-heading partners__h2">some big companies we've worked with</h2>
-        <div class="partners__list">
-            <div class="partners__logo">
-                {% for partner in products%}
-                    <div class="partners__logo-box">
-                        <img src="{{partner.image.url}}" alt="logo" class="partners__logo-img">
-                    </div>
-                {%endfor%}
-            </div>
-        </div>
-    </section> {% endcomment %}
 
     <footer class="footer">
         <h3 class="footer__heading">absolute estate makes you feel at home</h3>
@@ -269,11 +242,12 @@
             </a>
         </div>
         <p class="copyright">
-            copyright &copy; <span id="current-date"></span>
+            copyright &copy; <span id="date"></span>
         </p>
     </footer>
     <!--DEDICATED THIS WEB DESIGN TO MY LOVELY GRANDMA WHO PASSED AWAY RIGHT AFTER I COMPLETED THIS SITE
      MY ALLAH GRANT HER THE HIGHTEST PLACE IN JANNAH "MBINKO" 26th-8-2020  AT THE AGE OF 101-->
-     <script src="{% static 'js/properties'%}"></script>
+     <script src="{% static 'js/properties.js'%}"></script>
+     <script src="{% static 'js/review.js'%}"></script>
 </body>
 </html>

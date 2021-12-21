@@ -5,3 +5,5 @@ navToggle.addEventListener('click', ()=> {
     navList.classList.toggle('show');    
 });
 
+//generate the current date
+date.innerHTML = new Date().getFullYear();
