@@ -97,3 +97,19 @@
     align-items: center;
     color: #888;
 }
+
+.pagination_news {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    list-style: none;
+    transform: translateY(-2rem);
+
+    & a {
+        text-decoration: none; 
+        align-items: center;
+        color: #222;
+        
+    }
+}

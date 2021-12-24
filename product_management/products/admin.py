@@ -4,7 +4,7 @@ from products.views import portfolio
 
 # Register your models here.
 
-from . models import Product, New, About, LatestNew, SocialMedia
+from . models import Product, New, About, LatestNew
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name','price','created_at')
     list_links = ('id', 'name')
@@ -22,4 +22,3 @@ admin.site.register(Product, ProductAdmin)
 admin.site.register(New, NewAdmin)
 admin.site.register(LatestNew)
 admin.site.register(About)
-admin.site.register(SocialMedia)

@@ -7,7 +7,7 @@ const reviews = [
         name: 'Buba Ceesay',
         date: ' 15 Feb 2020',
         description: 'got my house with 24hr of buying',
-        text: 'I bought a 7 bedroom mansion in less than 24 hours. i was planning on buy a house last summer after checking few real estate website it was difficult to fine a 7 bedroom in duplex. after a week i found absolute estate and but a 7 bedroom in less than 24 hours just sign few documents and made the payment'
+        text: 'I bought a 7 bedroom mansion in less than 24 hours. i was planning on buy a house last summer after checking few real estate website it was difficult to fine a 7 bedroom duplex. after a week i found syfters and bought a 7 bedroom in less than 24 hours just sign few documents and made the payment'
     }, 
 
     {
@@ -15,7 +15,7 @@ const reviews = [
         name: 'Ousman Touray',
         date: ' 20 sep 2020',
         description: 'cheap amazing luxury homes',
-        text: 'i have grown up alway moving form one house to another, my parents never had their own house. I was alway dreaming of getting my own house some day. after 20 years my dream has come true all thanks to absolute estate for giving me flexible payment plan'
+        text: 'i have alway  been moving from one house to another, my parents never had their own house. I was alway dreaming of getting my own house some day. after 20 years my dream has come true all thanks to absolute estate for giving me flexible payment plan'
     },
 
     {
@@ -23,7 +23,7 @@ const reviews = [
         name: 'Abdou Janneh',
         date: ' 10 jan 2020',
         description: 'very easy to work with',
-        text: 'i have rented in absolute estate apartments for the last seven years it pretty easy all the tenders are well responsible people and the environment is super quite and all problem that i have get fixed as soon as possible with quality use all around the house '
+        text: 'i have rented in syfters apartment for the last seven months it pretty easy all the tenders are well responsible people and the environment is super quite and all problems i had get fixed as soon as possible with quality use all around the house '
     },
 
     {

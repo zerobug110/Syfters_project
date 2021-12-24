@@ -510,6 +510,18 @@ a::visited {
   align-items: center;
   color: #888; }
 
+.pagination_news {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  list-style: none;
+  transform: translateY(-2rem); }
+  .pagination_news a {
+    text-decoration: none;
+    align-items: center;
+    color: #222; }
+
 .testimony {
   grid-column: full-start / full-end;
   margin-top: 10rem;
@@ -678,6 +690,27 @@ a::visited {
 
 .product_button {
   border: none; }
+
+.pagination {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  list-style: none; }
+
+.page-item {
+  margin-left: 1.5rem; }
+  .page-item a {
+    text-decoration: none;
+    align-items: center;
+    color: #222; }
+
+.pagination_active {
+  background-color: #437cf7;
+  border: 0.1rem solid #437cf7;
+  border-radius: 50%;
+  padding: 0 1rem; }
 
 .details {
   padding: 2rem 0;

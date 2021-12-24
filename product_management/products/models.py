@@ -45,11 +45,8 @@ class LatestNew(models.Model):
 
     def __str__(self):
         return self.title
-
-class SocialMedia(models.Model):
-    facebook = models.CharField(max_length=500)
-    instagram = models.CharField(max_length=500)
-    twitter = models.CharField(max_length=500)
-    youtube = models.CharField(max_length=500)
-    def _str_(self):
-        return self.link
+    def save(self, *args,**kwargs):
+        if self.__class__.objects.count():
+            self.pk = self.__class__.objects.first().pk
+        super().save(*args, **kwargs)
+        
