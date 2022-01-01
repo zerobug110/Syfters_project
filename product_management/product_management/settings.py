@@ -89,7 +89,7 @@ else:
             'NAME': 'syfter_db',
             'USER': 'projectuser',
             'PASSWORD': '',
-            'HOST': '',
+            'HOST': 'localhost',
             'PORT': '',
         }
     }
