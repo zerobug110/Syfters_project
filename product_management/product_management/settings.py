@@ -75,16 +75,24 @@ WSGI_APPLICATION = 'product_management.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'syfter_db',
-        'USER': 'Badjie',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': 'PORT_NUMBER',
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'syfter_db',
+            'USER': 'Badjie',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
+        }
+    }
 
 
 # Password validation
