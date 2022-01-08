@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-xi&q#%wp(y-uo-^bvj!n)ja*#@vss15t7=b#6#10es5$*p0h^c
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    # '104.131.42.6','www.syfters.info','syfters.info'
+     '104.131.42.6',
+     'www.syfters.info',
+     'syfters.info'
     ]
 
 
