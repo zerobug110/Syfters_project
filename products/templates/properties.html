@@ -43,22 +43,22 @@
         <div class="section-heading">our properties</div>
         <div class="projects__container">
             {% if products%}
-            {% for product in products%}
-                 <div class="project">
-                    <div class="project__img-box">
-                        <img src="{{product.thumbnail_1.url}}" alt="" class="project__img">
-                    </div>
-                    <div class="project__info">
-                        <div class="project__icons">
-                            <p class="project__location">{{product.name}}</p>      
-                            {% comment %} <p class="project__location">{{landfield.size}}</p> {% endcomment %}
-                            <p class="project__location"><a href="{% url 'product' product.pk %}">details</a></p>
+                {% for product in products%}
+                    <div class="project">
+                        <div class="project__img-box">
+                            <img src="{{product.thumbnail_1.url}}" alt="" class="project__img">
+                        </div>
+                        <div class="project__info">
+                            <div class="project__icons">
+                                <p class="project__location">{{product.name}}</p>      
+                                {% comment %} <p class="project__location">{{landfield.size}}</p> {% endcomment %}
+                                <p class="project__location"><a href="{% url 'product' product.pk %}">details</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
             {%else%}
-            <p> NO PRODUCTS</p>
+            <p class= "no_products"> NO PRODUCTS AVAILABLE</p>
             {%endif%}
         </div>
         <ul class="pagination">
@@ -67,6 +67,7 @@
                     <a class="page-link" href="?page={{i}}">{{i}}</a>
                 <li>
             {%endfor%}
+        </ul>
     </section>
 
     <footer class="footer">

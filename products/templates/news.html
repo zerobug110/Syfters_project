@@ -44,20 +44,24 @@
     <article class="news">
         <h2 class="section-heading news__h2">news</h2>
         <div class="news__container">
-        {% for new in products%}
-            <div class="news__img-box--1">
-                <img src="{{new.image.url}}" alt="" class="project__img">
-            </div>
-            <div class="news__text-box">
-                <h2 class="news__heading">{{new.title}}</h2>
-                <div class="time-post">
-                    <p>{{new.time}}</p> 
+        {% if products%}
+            {% for new in products%}
+                <div class="news__img-box--1">
+                    <img src="{{new.image.url}}" alt="" class="project__img">
                 </div>
-                <p class="news__paragraph">
-                    {{new.content}} 
-                </p>
-            </div>
-        {% endfor %}
+                <div class="news__text-box">
+                    <h2 class="news__heading">{{new.title}}</h2>
+                    <div class="time-post">
+                        <p>{{new.time}}</p> 
+                    </div>
+                    <p class="news__paragraph">
+                        {{new.content}} 
+                    </p>
+                </div>
+            {% endfor %}
+            {% else %}
+                <p class ="no_products"> NO NEWS AVAILABLE</p>
+            {%endif%}
         </div>
     </article>
 
@@ -68,6 +72,7 @@
                     <a class="page-link" href="?page={{i}}">{{i}}</a>
                 <li>
             {%endfor%}
+        </ul>
     </article>
 
 

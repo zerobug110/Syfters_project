@@ -145,24 +145,28 @@
     <article class="news">
         <h2 class="section-heading news__h2">latest news</h2>
         <div class="news__container">
-            {% for latestnew in products%}
-                <div class="news__img-box--1">
-                    <img src="{{latestnew.image.url}}" alt="" class="project__img">
-                </div>
-                <div class="news__text-box">
-                    <h2 class="news__heading">
-                        {{latestnew.title}}
-                        {% comment %} 3 billion valuation {% endcomment %}
-                    </h2>
-                    <div class="time-post">
-                        <p>{{latestnew.time}}</p> 
+            {%if products%}
+                {% for latestnew in products%}
+                    <div class="news__img-box--1">
+                        <img src="{{latestnew.image.url}}" alt="" class="project__img">
                     </div>
-                    <p class="news__paragraph">
-                        {{latestnew.content}}
-                    </p>
-                    <a href = "/news" class="btn">more</a>
-                </div>
-            {% endfor %}
+                    <div class="news__text-box">
+                        <h2 class="news__heading">
+                            {{latestnew.title}}
+                            {% comment %} 3 billion valuation {% endcomment %}
+                        </h2>
+                        <div class="time-post">
+                            <p>{{latestnew.time}}</p> 
+                        </div>
+                        <p class="news__paragraph">
+                            {{latestnew.content}}
+                        </p>
+                        <a href = "/news" class="btn">more</a>
+                    </div>
+                {% endfor %}
+            {%else%}
+                 <p class= "no_products">NO NEWS AVAILABLE</p>
+            {%endif%}
         </div>        
     </article>
 
