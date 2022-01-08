@@ -57,7 +57,8 @@ a::visited {
   background-size: cover;
   background-position: top;
   grid-column: full-start / full-end;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative; }
 
 .home {
   background-image: linear-gradient(to bottom right, rgba(6, 19, 46, 0.856), rgba(15, 23, 34, 0.877)), url(../images/projects17.jpg); }
@@ -155,16 +156,19 @@ a::visited {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff; }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 56.25em) {
     .text-box {
-      top: 30%;
-      left: 50%;
-      position: fixed; } }
+      top: 50%;
+      left: 50%; } }
 
 .main-heading {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.6); }
+  @media screen and (max-width: 37.5em) {
+    .main-heading {
+      top: 30%;
+      left: 50%; } }
 
 .primary-heading {
   display: block;
