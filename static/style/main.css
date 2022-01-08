@@ -35,7 +35,8 @@ a::visited {
 
 .no_products {
   text-align: center;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #333; }
 
 .section-heading {
   color: #EC6310;

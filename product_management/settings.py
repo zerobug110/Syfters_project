@@ -29,7 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
      '104.131.42.6',
      'www.syfters.info',
-     'syfters.info'
+     'syfters.info',
+     'http://syfters.info'
+
     ]
 
 

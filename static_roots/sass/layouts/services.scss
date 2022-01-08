@@ -1,0 +1,184 @@
+.services {
+    grid-column: col-start 1 / col-end;
+    margin-top: 10rem;
+
+    &__container {
+        margin: 3rem 0 10rem 0;
+        grid-column: col-start 1 / col-end;
+        font-size: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 3rem;
+    }
+
+    &__h2 {
+        color: #EC6310;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $white;
+        // box-shadow: 0 .1rem .2rem rgba(0,0,0, .7);
+        // background-color: $secondary-color;
+        border-radius: .2rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    &__img-box {
+        height: 20rem;
+        border-radius: .3rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .2);
+        transition:  all .2s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-1{
+        background-image: linear-gradient( to right bottom,
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service8.png);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient( to right bottom,
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service8.png);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+    
+    .img-2{
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service1.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service1.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-3{
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service5.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service5.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-4{
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service4.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service4.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-5{
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service4.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service4.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-6{
+    background-image: linear-gradient(
+         rgba(6, 19, 46, 0.856),
+        rgba(15, 23, 34, 0.877)),
+    url(../images/service3.jpg);
+    background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service3.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-7{
+        background-image: linear-gradient(
+            rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service7.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service7.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+
+    .img-8{
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service6.jpg);
+        background-size: cover;
+        
+        &:hover {
+        background-image: linear-gradient(
+             rgba(6, 19, 46, 0.856),
+            rgba(15, 23, 34, 0.877)),
+        url(../images/service6.jpg);
+        background-size: cover;
+        transform: translateY(-.3rem);
+        }
+    }
+}
