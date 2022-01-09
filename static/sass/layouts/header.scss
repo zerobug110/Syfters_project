@@ -16,18 +16,6 @@
 
 }
 
-// .detail-bg {
-
-//     grid-column: full-start / full-end;
-//     background-image: linear-gradient(to bottom right, 
-//     rgba(69, 125, 247, 0.705),
-//     rgba(109, 174, 254, 0.705));
-//     height: 10rem;
-//     clip-path: none;
-//     background-size: cover;
-    
-// }
-
 .properties {
     background-image: linear-gradient(to bottom right, 
         rgba(6, 19, 46, 0.856),
@@ -70,7 +58,10 @@
         border-radius: 48%;
 
         @include respond(tab-port) {
-            z-index: 11;
+            z-index: -11;
+            margin-top: 2rem;
+            width: 5em;
+            height: 5em;
         }
     }
 
@@ -121,10 +112,10 @@
 
 
 .show {
-    height: 40rem;
-    background-color: $secondary-color;
+    height: 100vh;
+    background-color: rgb(2, 5, 17);
     margin-top: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
     
 }
 
@@ -140,6 +131,7 @@
 
     @include respond (tab-port) {
         display: block;
+        margin-top: 2rem;
     }
 
     & > * {

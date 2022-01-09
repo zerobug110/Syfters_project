@@ -32,6 +32,9 @@ a::visited {
   display: grid;
   grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end];
   grid-template-rows: 100vh repeat(7, min-content); }
+  @media screen and (max-width: 75rem) {
+    .container {
+      grid-template-columns: [full-start] 2em 1fr repeat(8, [col-start] minmax(min-content, 7em)) [col-end] 1fr 2em [full-end]; } }
 
 .no_products {
   text-align: center;
@@ -92,7 +95,10 @@ a::visited {
     border-radius: 48%; }
     @media screen and (max-width: 56.25em) {
       .nav__logo {
-        z-index: 11; } }
+        z-index: -11;
+        margin-top: 2rem;
+        width: 5em;
+        height: 5em; } }
   .nav__items {
     color: #fff;
     display: flex; }
@@ -123,8 +129,8 @@ a::visited {
       font-weight: 600; }
 
 .show {
-  height: 40rem;
-  background-color: #6daffe;
+  height: 100vh;
+  background-color: #020511;
   margin-top: 0;
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
 
@@ -139,7 +145,8 @@ a::visited {
   display: none; }
   @media screen and (max-width: 56.25em) {
     .lines {
-      display: block; } }
+      display: block;
+      margin-top: 2rem; } }
   .lines > * {
     background-color: #fff;
     width: 3rem;
@@ -304,6 +311,9 @@ a::visited {
   background-position: center;
   display: grid;
   grid-template-columns: 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem; }
+  @media screen and (max-width: 75rem) {
+    .work-matters {
+      grid-template-columns: 2rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 2rem; } }
 
 .work {
   font-size: 1.6rem;
@@ -450,22 +460,28 @@ a::visited {
     border-bottom-right-radius: .2rem; }
   .latest-project__img-1 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property1.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
   .latest-project__img-2 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property2.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
   .latest-project__img-3 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property3.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
   .latest-project__img-4 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property4.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
   .latest-project__img-5 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property5.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
   .latest-project__img-6 {
     background-image: linear-gradient(to right bottom, rgba(69, 125, 247, 0), rgba(109, 174, 254, 0)), url(../images/latest-property6.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: right; }
 
 .news {
   grid-column: col-start 1 / col-end;
