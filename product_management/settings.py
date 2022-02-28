@@ -25,14 +25,13 @@ SECRET_KEY = 'django-insecure-xi&q#%wp(y-uo-^bvj!n)ja*#@vss15t7=b#6#10es5$*p0h^c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', False) == 'False'
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
      '104.131.42.6',
      'www.syfters.info',
      'syfters.info',
      'http://syfters.info'
-
     ]
 
 
@@ -139,9 +138,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static')
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
 MEDIA_URL = '/media/'
 
